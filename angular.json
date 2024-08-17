@@ -38,6 +38,7 @@
             ],
             "styles": [
               "src/styles.scss"
+            
             ],
             "scripts": []
           },
@@ -97,7 +98,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstarp/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           }

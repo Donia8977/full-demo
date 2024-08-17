@@ -1,0 +1,24 @@
+
+<input [(ngModel)]="userName" placeholder="Enter your username" />
+
+
+<p>Username: {{ userName }}</p>
+
+<button (click)="resetUsername()" [disabled]="!userName">Reset Username</button>
+<br><br><br> <hr>
+
+<button (click)="onAppears()" [disabled]="isDetailsAppears">Display Details</button><br><br>
+
+<p *ngIf="isDetailsAppears">Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Dolore, molestias rerum a asperiores beatae,
+      quos consequuntur modi voluptatum sunt laboriosam qui sint alias recusandae delectus iure iusto sequi eligendi nemo?</p>
+
+
+
+<br><br>
+
+<ul>
+    <li *ngFor="let log of logs; let i = index" [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': i >= 4}">
+      {{ log }}
+    </li>
+  </ul>
